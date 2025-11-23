@@ -1,5 +1,5 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../components/Banner.jsx";
 import Playstation from "../assets/PlayStation.png";
 import AirpodsMax from "../assets/airpodsmax.png";
 import VisionPro from "../assets/visionPor.png";
