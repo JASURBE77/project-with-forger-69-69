@@ -4,7 +4,7 @@ import Playstation from "../assets/PlayStation.png";
 import AirpodsMax from "../assets/airpodsmax.png";
 import VisionPro from "../assets/visionPor.png";
 import Macpro from "../assets/MacBook Pro 14.png";
-import Category from "../components/Category";
+import Category from "../components/Category.jsx";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchdataBase } from "../redux/slice/productsSlice";
 import { useEffect } from "react";
