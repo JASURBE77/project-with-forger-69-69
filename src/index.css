@@ -6,3 +6,10 @@
   width: 85%;
   margin: 0 auto;
 }
+@media screen and (max-width:500px) {
+.container{
+  max-width: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+}

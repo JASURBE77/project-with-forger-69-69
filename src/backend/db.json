@@ -1,0 +1,22 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Iphone 14 pro ",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_nMPc-JnsC0vmKmFYm8VmNslQJatziWLpQ&s",
+            "description" : "yaxshi boladi vashen zor joyi kopga yetadi sikl 0 yomkost 101",
+            "color": "purple",
+            "borligi": 13,
+            "price": "400 $"
+        },
+                {
+            "id": 2,
+            "title": "Iphone 14 pro ",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_nMPc-JnsC0vmKmFYm8VmNslQJatziWLpQ&s",
+            "description" : "yaxshi boladi vashen zor joyi kopga yetadi sikl 0 yomkost 101",
+            "color": "purple",
+            "borligi": 13,
+            "price": "400 $"
+        }
+    ]
+}
