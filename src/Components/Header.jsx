@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import logo from '../assets/Logo Vector.svg'
-import heart from '../assets/heart.svg'
-import cart from '../assets/cart.svg'
-import user from '../assets/user.svg'
-import lupa from '../assets/lupa.svg'
-import burger from '../assets/burger-menu-svgrepo-com.svg'
-import close from '../assets/close-x-svgrepo-com.svg'
+import Logo from '../assets/LogoVector.svg'
+import Heart from '../assets/Heart.svg'
+import Cart from '../assets/Cart.svg'
+import User from '../assets/User.svg'
+import Lupa from '../assets/Lupa.svg'
+import Burger from '../assets/Burger-menu-svgrepo-com.svg'
+import Close from '../assets/Close-x-svgrepo-com.svg'
 import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
@@ -22,13 +22,13 @@ const Header = () => {
                     <div className='flex items-center justify-between mb-5'>
 
                     <div className='flex items-center gap-5'>
-                            <img onClick={() => setBurger(true)} className='flex lg:hidden w-[30px]' src={burger} alt="" />
+                            <img onClick={() => setBurger(true)} className='flex lg:hidden w-[30px]' src={Burger} alt="" />
 
-                        <img src={logo} alt="" />
+                        <img src={Logo} alt="" />
                     </div>
 
                         <div className='flex relative max-[768px]:hidden'>
-                            <img className='relative w-[19px] left-[40px]' src={lupa} alt="" />
+                            <img className='relative w-[19px] left-[40px]' src={Lupa} alt="" />
                             <input placeholder='Search' className='bg-[#F5F5F5] rounded-[8px] w-[372px] h-[56px] text-black pl-[48px] outline-none' type="text" />
                         </div>
 
@@ -42,9 +42,9 @@ const Header = () => {
                         </nav>
 
                         <div className='flex items-center gap-[27px]'>
-                            <img className='cursor-pointer' src={heart} alt="" />
-                            <img className='cursor-pointer' src={cart} alt="" />
-                            <img className='cursor-pointer' src={user} alt="" />
+                            <img className='cursor-pointer' src={Heart} alt="" />
+                            <img className='cursor-pointer' src={Cart} alt="" />
+                            <img className='cursor-pointer' src={User} alt="" />
                         </div>
 
                     </div>
@@ -57,7 +57,7 @@ const Header = () => {
 
                         <div className='bg-black w-[65%] p-[30px] h-[100vh] relative'>
 
-                            <img onClick={() => setBurger(false)} className='absolute top-5 right-10' src={close} alt="" />
+                            <img onClick={() => setBurger(false)} className='absolute top-5 right-10' src={Close} alt="" />
 
                             <ul className='flex flex-col gap-[20px] items-start '>
                                 <li><NavLink className={({ isActive }) => isActive ? "text-black" : "text-[#c7c7c7] hover:text-[#929292] transition-all"} to="/">Home</NavLink></li>
@@ -72,7 +72,7 @@ const Header = () => {
                 }
                    <div className="container">
                          <div className='  max-[768px]:flex hidden justify-center'>
-                            <img className='relative w-[19px] left-[30px]' src={lupa} alt="" />
+                            <img className='relative w-[19px] left-[30px]' src={Lupa} alt="" />
                             <input placeholder='Search' className='bg-[#F5F5F5] rounded-[8px] w-full h-[56px] text-black pl-[48px] outline-none' type="text" />
                         </div>
                    </div>
