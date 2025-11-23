@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Iphone14 from "../assets/Iphone 14 pro 1.png"
+import Iphone14 from "../assets/Iphone14pro1.png"
 const MovieDetail = () => {
   const { id } = useParams();
   const { data } = useSelector((state) => state.server);
