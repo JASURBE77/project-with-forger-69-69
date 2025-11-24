@@ -1,10 +1,10 @@
 import React from "react";
-import Banner from "../components/Banner";
+import Banner from "../Components/Banner";
 import Playstation from "../assets/PlayStation.png";
 import AirpodsMax from "../assets/airpodsmax.png";
 import VisionPro from "../assets/visionPor.png";
 import Macpro from "../assets/MacBookPro14.png";
-import Category from "../components/Category";
+import Category from "../Components/Category";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchdataBase } from "../redux/slice/productsSlice";
 import { useEffect } from "react";
