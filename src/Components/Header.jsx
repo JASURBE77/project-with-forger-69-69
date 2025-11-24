@@ -7,10 +7,12 @@ import Lupa from '../assets/Lupa.svg'
 import Burger from '../assets/Burger-menu-svgrepo-com.svg'
 import Close from '../assets/Close-x-svgrepo-com.svg'
 import { Link, NavLink } from 'react-router-dom'
+import LoginModal from './LoginModal'
 
 const Header = () => {
 
     const [isBurger, setBurger] = useState(false)
+    const [openModal, setModal] = useState(false)
 
     return (
         <div>
@@ -21,11 +23,11 @@ const Header = () => {
 
                     <div className='flex items-center justify-between mb-5'>
 
-                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-5'>
                             <img onClick={() => setBurger(true)} className='flex lg:hidden w-[30px]' src={Burger} alt="" />
 
-                        <img src={Logo} alt="" />
-                    </div>
+                            <img src={Logo} alt="" />
+                        </div>
 
                         <div className='flex relative max-[768px]:hidden'>
                             <img className='relative w-[19px] left-[40px]' src={Lupa} alt="" />
@@ -44,7 +46,7 @@ const Header = () => {
                         <div className='flex items-center gap-[27px]'>
                             <img className='cursor-pointer' src={Heart} alt="" />
                             <img className='cursor-pointer' src={Cart} alt="" />
-                            <img className='cursor-pointer' src={User} alt="" />
+                            <img onClick={() => setModal(true)} className='cursor-pointer' src={User} alt="" />
                         </div>
 
                     </div>
@@ -70,14 +72,20 @@ const Header = () => {
                     </div>
 
                 }
-                   <div className="container">
-                         <div className='  max-[768px]:flex hidden justify-center'>
-                            <img className='relative w-[19px] left-[30px]' src={Lupa} alt="" />
-                            <input placeholder='Search' className='bg-[#F5F5F5] rounded-[8px] w-full h-[56px] text-black pl-[48px] outline-none' type="text" />
-                        </div>
-                   </div>
+                <div className="container">
+                    <div className='  max-[768px]:flex hidden justify-center'>
+                        <img className='relative w-[19px] left-[30px]' src={Lupa} alt="" />
+                        <input placeholder='Search' className='bg-[#F5F5F5] rounded-[8px] w-full h-[56px] text-black pl-[48px] outline-none' type="text" />
+                    </div>
+                </div>
 
             </header>
+
+            {openModal &&
+
+                <LoginModal setModal={setModal} />
+
+            }
 
         </div>
     )
